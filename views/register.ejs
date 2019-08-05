@@ -1,0 +1,39 @@
+<% include ./partials/header %>
+<div class="container">
+<div class="row text-center" style="margin-top:130px">
+    <center>
+<h1>Register for CampGround Account</h1>
+</center>
+<br>
+<div style="width:30%; margin:0 auto;">
+<form action="/register" method="POST">
+    <div class="form-group">
+        <input class="form-control" type="text" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password" name="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="firstName" placeholder="First Name">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="avatar" placeholder="Image url">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="password" name="adminCode" placeholder="Admin Code">
+    </div>
+    <div class="form-group" style="margin-top:20px; width:30%; margin-left:130px;">
+        <button class="btn btn-primary btn-block">Register!</button>
+    </div>
+</form>
+</div>
+<a href="/campgrounds" style="margin-left:20px">Go Back</a>
+</div>
+</div>
+<% include ./partials/footer %>
