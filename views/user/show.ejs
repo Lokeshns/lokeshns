@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+<div class="container" style="margin-top:150px;">
+<div class="row">
+    <div class="col-md-4">
+        <h1><%= user.firstName + " " + user.lastName %></h1>
+        <div class="thumbnail">
+            <img src="<%= user.avatar %>" alt="User Profile img">
+            <div class="caption"><a href="mailto:<%= user.email %>"><%= user.email %></a></div>
+        </div>
+        Bacon ipsum dolor amet frankfurter porchetta ham hock short loin meatloaf ham pork chop tongue ribeye salami shankle pork loin. Tenderloin tri-tip short ribs landjaeger capicola, boudin porchetta beef. Ball tip pork chop meatball, ribeye filet mignon hamburger buffalo porchetta andouille bresaola biltong ham. Buffalo ham landjaeger meatloaf ham hock, jerky short loin ball tip capicola filet mignon strip steak frankfurter porchetta swine. 
+    </div>
+    <div class="col-md-8">
+        <h3><%= user.username %>'s Campground</h3>
+        <ul>
+        <% campgrounds.forEach(function(campgrounds){ %>
+            <li><a href="/campgrounds/<%= campgrounds.id %>"><%= campgrounds.name %></a></li>
+        <% }); %>
+        </ul>
+    </div>
+</div>
+</div>
+<% include ../partials/footer %>
