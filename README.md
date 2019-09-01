@@ -1,2 +1,0 @@
-# lokeshns
-web-development
